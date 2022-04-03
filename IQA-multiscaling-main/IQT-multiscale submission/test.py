@@ -17,7 +17,7 @@ config = Config({
     "GPU_ID": "0",
     "scale": 1,
     
-    # model for PIPAL (NTIRE2021 Challenge)
+    # model for PIPAL (NTIRE2022 Challenge)
     "n_enc_seq": 21*21,                 # feature map dimension (H x W) from backbone, this size is related to crop_size
     "n_dec_seq": 21*21,                 # feature map dimension (H x W) from backbone
     "n_layer": 1,                       # number of encoder/decoder layers
@@ -34,9 +34,9 @@ config = Config({
     "crop_size": 192,                   # input image crop size
 
     # data
-    "db_path": "/mnt/Dataset/anse_data/IQAdata/PIPAL/Val_Images",
-    "weight_file": "epoch40.pth", # "./weights/epoch240.pth",
-    "result_file": "output.txt",
+    "db_path": "/mnt/Dataset/anse_data/IQAdata/PIPAL/Test_Images",
+    "weight_file": "./weights/Scale0.5.pth",  # "./weights/Scale1.pth", "./weights/Scale2.pth", "./weights/Scale3.pth"
+    "result_file": "outputScale0.5.txt",      #"outputScale1.txt","outputScale2.txt","outputScale3.txt"
 
     # ensemble in test
     "test_ensemble": True,
@@ -176,6 +176,3 @@ for filename in tqdm(filenames):
         line = "%s,%f\n" % (filename, float(pred.item()))
         f.write(line)
 f.close()
-
-
-
