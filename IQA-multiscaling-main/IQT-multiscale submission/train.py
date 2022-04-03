@@ -32,7 +32,7 @@ config = Config({
     # "n_output": 1,                    # dimension of final prediction
     # "crop_size": 256,                 # input image crop size                 
 
-    # model for PIPAL (NTIRE2021 Challenge)
+    # model for PIPAL (NTIRE2022 Challenge)
     "n_enc_seq": 21*21,                 # feature map dimension (H x W) from backbone, this size is related to crop_size
     "n_dec_seq": 21*21,                 # feature map dimension (H x W) from backbone
     "n_layer": 1,                       # number of encoder/decoder layers
