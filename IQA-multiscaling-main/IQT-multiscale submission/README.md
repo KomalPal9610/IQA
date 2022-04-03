@@ -41,3 +41,4 @@ After those settings, you can run the inference code by running "test.py"
 
 **Link for trained weights**:
 https://drive.google.com/drive/folders/1QbfB-_k90xqgQR2w8eVIi3G0FOUM4RKr
+* Create a new directory of name weights and upload .pth file in this directory.
