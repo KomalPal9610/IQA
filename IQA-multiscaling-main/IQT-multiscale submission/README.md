@@ -23,6 +23,7 @@ After those settings, you can run the train & validation code by running "train.
 
 After those settings, you can run the inference code by running "test.py"
 - python3 test.py (execution code)
+- From here you will get four different output files outputScale0.5.txt, outputScale1.txt, outputScale2.txt, outputScale3.txt then you have to run averaging.py file to get final output file.
 
 
 ## Changes required at config part of train.py(for training) and test.py(for testing):
