@@ -10,6 +10,7 @@ The environmental settings are described below.
 
 # Train & Validation
 First, you need to download weights of InceptionResNetV2 pretrained on ImageNet database.
+- Download the weights from this website (http://data.lip6.fr/cadene/pretrainedmodels/inceptionresnetv2-520b38e4.pth)
 
 Second, you need to download the PIPAL database.
 - Download the PIPAL database (train/valid) from this website (https://github.com/HaomingCai/PIPAL-dataset)
