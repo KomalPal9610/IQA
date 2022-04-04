@@ -105,7 +105,7 @@ def train_epoch(config, epoch, model_transformer, model_backbone, save_output, c
         }, weights_file)
         print('save weights of epoch %d' % (epoch+1))
 
-    return np.mean(losses), rho_s, rho_p, model_transformer.state_dict(), optimizer.state_dict(), scheduler.state_dict()
+    return np.mean(losses), rho_s, rho_p
 
 
 """ validation """
