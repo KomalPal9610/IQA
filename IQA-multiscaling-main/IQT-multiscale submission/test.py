@@ -122,8 +122,8 @@ for filename in tqdm(filenames):
                     top = np.random.randint(0, h - new_h)
                     left = np.random.randint(0, w - new_w)
                 else:
-                    new_h = config.crop_size
-                    new_w = config.crop_size
+                    new_h = h
+                    new_w = w
                     top = np.random.randint(0, h - new_h + 1)
                     left = np.random.randint(0, w - new_w + 1)
 
@@ -153,8 +153,8 @@ for filename in tqdm(filenames):
                 top = np.random.randint(0, h - new_h)
                 left = np.random.randint(0, w - new_w)
             else:
-                new_h = config.crop_size
-                new_w = config.crop_size
+                new_h = h
+                new_w = w
                 top = np.random.randint(0, h - new_h + 1)
                 left = np.random.randint(0, w - new_w + 1)
 
