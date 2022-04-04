@@ -16,4 +16,4 @@ df3 = pd.read_csv("outputScale2.txt")
 df4 = pd.read_csv("outputScale3.txt")
 df5 = pd.concat([df1['A'],(df1['B'] + df2['B'] + df3['B']+df4['B'])/4],axis = 1)
 df5.to_csv("output.txt", index = False)
-#After saving the output file one can remove the first like containing A and B as column name
+#After saving the output file one can remove the first line containing A and B as column name
